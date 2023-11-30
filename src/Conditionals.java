@@ -7,28 +7,28 @@ public class Conditionals {
     public Conditionals(){
         String question="Do you like school?";
         System.out.println(question);
-        int randomInt = (int)(Math.random() * 101);
+        double randomInt = Math.random();
 
         if (randomInt<0.16){
 
             System.out.print("Absolutely!");
         } else if (randomInt<0.32&&randomInt>0.16) {
 
-            System.out.print("How dare you");
+            System.out.print("No!");
         }else if (randomInt<0.48&&randomInt>0.32) {
 
             System.out.print("Certainly not");
         }else if (randomInt<0.64&&randomInt>0.48) {
 
-            System.out.print("You're going to have to ask that again");
+            System.out.print("Ask Again");
         }else if (randomInt<0.80&&randomInt>0.64) {
 
-            System.out.print("I'm not sure that appropriate");
+            System.out.print("Please don't ask that");
         }else if (randomInt<0.80&&randomInt>0.96){
 
             System.out.print("Without a doubt");
         } else {
-            System.out.print("Everything you say if true");
+            System.out.print("Facts you right");
         }
     }
 
